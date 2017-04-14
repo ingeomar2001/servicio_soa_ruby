@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+
   get 'welcome/index'
   root 'welcome#index'
+  
+  get 'service_Netflix' , to: 'servicio_soa#netflix'
+  get 'service_Wikipedia' , to: 'servicio_soa#wikipedia'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
