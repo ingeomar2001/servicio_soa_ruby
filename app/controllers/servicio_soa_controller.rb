@@ -1,7 +1,7 @@
 class ServicioSoaController < ApplicationController
   def netflix
     if params[:director].nil?
-      @director = "dago garcia"
+      @director = "tarantino"
     else
       @director = params[:director]
     end
