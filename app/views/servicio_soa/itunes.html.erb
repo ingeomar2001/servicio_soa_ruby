@@ -1,9 +1,8 @@
 <%=
 require 'net/http'
 
-url = URI.parse('https://itunes.apple.com/search?media=music&term='+@term+'&entity=musicTrack&limit=200')
+url = URI.parse('http://itunes.apple.com/search?media=music&term='+@term+'&entity=musicTrack&limit=200')
 http = Net::HTTP.new(url.host, url.port)
-http.use_ssl = true
 res = http.get(url.request_uri)
 res.body
 %>
