@@ -1,8 +1,8 @@
 <%=
 require 'net/http'
-
-url = URI.parse('http://netflixroulette.net/api/api.php?director=Quentin%20Tarantino')
+url = URI.parse('http://netflixroulette.net/api/api.php?director='+@director)
 http = Net::HTTP.new(url.host, url.port)
 res = http.get(url.request_uri)
 res.body
+
 %>
