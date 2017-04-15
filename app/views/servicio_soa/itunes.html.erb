@@ -1,7 +1,7 @@
 <%=
 require 'net/http'
 
-url = URI.parse('https://en.wikipedia.org/w/api.php?action=query&titles=netflix&prop=revisions&rvprop=content&format=json')
+url = URI.parse('https://itunes.apple.com/search?media=music&term='+@term+'&entity=musicTrack&limit=200')
 http = Net::HTTP.new(url.host, url.port)
 http.use_ssl = true
 res = http.get(url.request_uri)
