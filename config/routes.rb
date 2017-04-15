@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'servicio_soa/itunes'
+
+  get 'servicio_soa/netflix'
+
   get 'welcome/index'
   root 'welcome#index'
   
