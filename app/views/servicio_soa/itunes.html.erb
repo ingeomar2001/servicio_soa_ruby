@@ -4,4 +4,5 @@ url = URI.parse('https://itunes.apple.com/search?media=music&term='+@term+'&enti
 http = Net::HTTP.new(url.host, url.port)
 http.use_ssl = true
 res = http.get(url.request_uri)
+res.body
 %>
