@@ -11,7 +11,8 @@ class ServicioSoaController < ApplicationController
     if params[:term].nil?
       @term = "shakira"
     else
-      @term = params[:term]
+      @term = "shakira"
+      @termi = params[:term]
     end
   end
 end
