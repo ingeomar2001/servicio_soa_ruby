@@ -1,6 +1,6 @@
 <%=
 require 'net/http'
-url = URI.parse('http://netflixroulette.net/api/api.php?director='+@term)
+url = URI.parse('http://itunes.apple.com/search?media=music&term='+@term+'&entity=musicTrack&limit=200')
 http = Net::HTTP.new(url.host, url.port)
 res = http.get(url.request_uri)
 res.body
