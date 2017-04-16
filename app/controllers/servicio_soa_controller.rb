@@ -5,15 +5,15 @@ class ServicioSoaController < ApplicationController
     else
       @director = params[:director]
     end
+    @director = URI::encode(@director)
   end
 
   def itunes
     if params[:term].nil?
       @term = "shakira"
     else
-      @term = "shakira"
-      @termi = params[:term]
+      @term = params[:term]
     end
-    @termi = URI::encode(@termi)
+    @term = URI::encode(@term)
   end
 end
