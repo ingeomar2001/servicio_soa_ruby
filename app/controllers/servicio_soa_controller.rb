@@ -9,7 +9,7 @@ class ServicioSoaController < ApplicationController
 
   def itunes
     if params[:term].nil?
-      @term = "ninaemilia"
+      @term = "shakira"
     else
       @term = params[:term]
     end
