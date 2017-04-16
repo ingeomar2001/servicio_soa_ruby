@@ -14,5 +14,6 @@ class ServicioSoaController < ApplicationController
       @term = "shakira"
       @termi = params[:term]
     end
+    @termi = URI::encode(@termi)
   end
 end
